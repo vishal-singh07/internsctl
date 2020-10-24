@@ -1,0 +1,16 @@
+Usage: internsctl [OPTION]... [FILE}...
+
+internsctl is high level shell program for doing multiple tasks . It can be used to get information about the system , create new users and get the details about different files present in the system.
+
+cpu getinfo					displays information about CPU architecture
+file getinfo <file-name>			displays information about the file
+file getinfo [OPTION] <file-name>		displays specific information about the file
+--last-modified , -m				displays the last modified time of the specified file only
+memory getinfo					display amount of free and used memory in the system
+--owner , -o					display the owner of the specified file only
+--permissions , -p				display the permissions of the specified file only
+--size , -s					display the size of the specified file only
+user create <user-name> 			creates a new user with the entered username
+user list					lists all the users in the server
+user list --sudo-only				list all the users with sudo permissions
+--version					output version 
